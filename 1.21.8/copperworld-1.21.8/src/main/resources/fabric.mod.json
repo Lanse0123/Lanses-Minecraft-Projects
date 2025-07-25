@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "copperworld",
+	"version": "${version}",
+	"name": "CopperWorld",
+	"description": "This mod will turn your entire world into copper! More world presets coming soon!",
+	"authors": [
+		"Lanse"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/copperworld/copperWorldIcon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lanse.copperworld.CopperWorld"
+		],
+		"fabric-datagen": [
+			"lanse.copperworld.CopperWorldDataGenerator"
+		]
+	},
+	"mixins": [
+		"copperworld.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
