@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "schematics",
+	"version": "${version}",
+	"name": "Schematics",
+	"description": "Hello Lanse!",
+	"authors": [
+		"Hamster332"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/schematics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hamster332.schematics.Schematics"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

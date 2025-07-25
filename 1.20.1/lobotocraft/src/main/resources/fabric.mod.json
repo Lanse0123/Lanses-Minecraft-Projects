@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "lobotocraft",
+	"version": "${version}",
+	"name": "Lobotocraft",
+	"description": "This mod will warp your world beyond recognition. Have fun!",
+	"authors": [
+		"Lanse_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lobotocraft/Lobocon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lanse.lobotocraft.Lobotocraft"
+		],
+		"fabric-datagen": [
+			"lanse.lobotocraft.LobotocraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"lobotocraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

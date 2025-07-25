@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mobrain",
+	"version": "${version}",
+	"name": "MobRain",
+	"description": "Mobs rain from the sky more and more as time goes on.",
+	"authors": [
+		"Lanse_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mobrain/MobRainIcon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lanse.mobrain.MobRain"
+		],
+		"fabric-datagen": [
+			"lanse.mobrain.MobRainDataGenerator"
+		]
+	},
+	"mixins": [
+		"mobrain.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
