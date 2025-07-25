@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "greaterhorns",
+	"version": "${version}",
+	"name": "GreaterHorns",
+	"description": "Goat Horns now wake up all Sculk Sensors within 128 blocks. Great for trolling and redstone.",
+	"authors": [
+		"Lanse_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/greaterhorns/GoatIcon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lanse.greaterhorns.GreaterHorns"
+		],
+		"fabric-datagen": [
+			"lanse.greaterhorns.GreaterHornsDataGenerator"
+		]
+	},
+	"mixins": [
+		"greaterhorns.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
