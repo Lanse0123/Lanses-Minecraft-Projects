@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "entitygravity",
+	"version": "${version}",
+	"name": "entitygravity",
+	"description": "This turns Minecraft into a Gravity Simulator! Every mob has gravity. Good luck!",
+	"authors": [
+		"Lanse"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/entitygravity/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lanse.entitygravity.Entitygravity"
+		],
+		"fabric-datagen": [
+			"lanse.entitygravity.EntitygravityDataGenerator"
+		]
+	},
+	"mixins": [
+		"entitygravity.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
